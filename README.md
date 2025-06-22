@@ -115,493 +115,89 @@ Within the “Review Options” section, click on “Next” on the bottom right
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Once the installation is complete and the server computer has been turned into a Domain Controller, the following pop-up will appear.
 
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/active%20directory%2025.JPG" height="400" />
 
 
 Once “Close” is clicked on the bottom right hand corner, the computer will  restart. After these configurations are made, a Domain admin user can be created within the domain. 
-Create a Domain Admin user within the domain
+
+
+<h1>Create a Domain Admin user within the domain</h1>
+
+
 The next step is to create a domain admin user for the Domain controller. This user is necessary in order to manage User and group accounts, Group Policy Objects (GPOs), Domain Trusts, and DNS configuration within the DC. It is also needed for security reasons. Open “Active Directory Users and Computers” by using the Windows search bar on the bottom left corner of the screen and typing “Active Directory” and clicking on the application.
 
 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%201.png" height="400" />
 
 
 Within this application, right click the “mydomain.com” section and select “New” then click on “Organizational Unit”. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%202.png" height="400" />
 
 
 
 A “New Object - Organizational Unit” screen will show up. Within this screen, in the textbox under “Name” the organizational unit can be given a name. For compatibility with scripts and tools, using a underscore (_) for naming is suggested. For the purposes of this demonstration the name “_EMPLOYEES” will be used for this organizational unit. The naming of the OU’s is case sensitive. After typing the name of the OU, Click on “OK” on the bottom of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%203.png" height="400" />
 
 
 Now an “_ADMINS” OU must be created. Within “Active Directory Users and Computers” right click the “mydomain.com” section and select “New” then click on “Organizational Unit”. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%202.png" width="600" height="400" />
 
 
 In the textbox under “Name”, type in the name  “_ADMINS” then click on “OK” on the bottom of the screen.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%204.png" width="600" height="400" />
 
 
 Now that these OUs have been created, a user within “_ADMINS” folder will be created. This will be the admin user account. Right click the “_ADMINS” folder and select the “New” option, then click on “User”.   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%205.png" width="600" height="400" />
 
 
 A “New Object - User” screen will appear. Within this screen, a first and last name as well as a logon name can be assigned to the user. For the purposes of this demonstration the name “Jane Doe” will be used as well as the logon name “jane_admin”. After these credentials are typed in, click on “Next” on the bottom right hand corner. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%206.png" width="600" height="400" />
 
 
 
 Within the next section, a password will need to be assigned to this user. There are 4 options listed for password security options. These are “User must change password at next logon”, “User cannot change password”, “Password never expires”, and “Account is disabled”. Select the option that is best suited for this user. For the purposes of this demonstration the password “Cyberlab123!” will be used and the “Password never expires” option will be selected. Once the password has been typed in, click on “Next” on the bottom right hand corner of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%207.png" width="600" height="400" />
 
 
 Within the next screen, Click on “Finish”
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%208.png" width="600" height="400" />
 
 
 Now that the user Jane Doe has been created, the user can be made into an admin by adding it to the “Domain Admin” security group. Right click on “Jane Doe” within the “_ADMINS” folder then click on “Properties”.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%209.png" width="600" height="400" />
 
 
 A “Jane Doe Properties” screen will appear. Within this screen, click on the “Member Of” tab on the top left corner of the screen. 
 
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%2010.png" width="600" height="400" />
 
 
 Click on “Add…” on the middle of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%20%2011.png" width="600" height="400" />
 
 
 A “Select Groups” screen will appear. Within this screen under the “Enter the object names to select” section, type in “domain admins” then click on “Check Names” on the right side of the screen. This will confirm if there are any groups that match the given name. Afterwards, click on “OK” on the bottom right hand corner of the screen.  
 
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%2012.png" width="600" height="400" />
 
 
 Once completed, you will be taken back to the "Member Of” tab. On this screen, Click on “Apply” on the bottom right corner of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/27c01ff2210d72923a01220b2acd11682d9e3690/images/Active%20Directory%20DC%20ADmin%2013.png" width="600" height="400" />
 
 Now that we created an admin user and the Active Directory has been deployed and its in the cloud, we can add a computer to this network. 
 
