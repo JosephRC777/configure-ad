@@ -202,7 +202,7 @@ Once completed, you will be taken back to the "Member Of” tab. On this screen,
 Now that we created an admin user and the Active Directory has been deployed and its in the cloud, we can add a computer to this network. 
 
 
-Join Client-1 to your domain (mydomain.com)
+<h1>Join Client-1 to your domain (mydomain.com)</h1>
 
 
 A computer can now be added to the domain. For the purposes of this demonstration a virtual machine named “Client-1” will be added. The computer joining the domain has to have its DNS settings changed to the Private IP address of the Domain Controller. This has already been done for the “Client-1” virtual machine that will connect to the DC. 
@@ -210,175 +210,46 @@ A computer can now be added to the domain. For the purposes of this demonstratio
 
 Within “Client-1”, Access “Settings” by using the windows search bar on the bottom left corner. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%201.png" width="600" height="400" />
 
 
 Within the “Settings” screen, click on “About” on the bottom right hand corner. Afterwards, click on “Rename this PC (advanced)” on the right hand side of the screen. 
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%202.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%203.png" width="600" height="400" />
 
 A “System Properties” screen will show up. Within this screen, click on “Change…” in the middle of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%204.png" width="600" height="400" />
 
 
 A “Computer Name/Domain Changes” screen will show up. Select “Domain:” on the bottom of the screen, then type in the name of the domain that was setup earlier in the text box. The name “mydomain.com” will be used. Afterwards, click on “OK” on the bottom right corner of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%205.png" width="600" height="400" />
 
 
 
 A “Windows Security” screen will show up. Within this screen, the credentials of the admin that was set up for the domain controller must be provided. For the purposes of this demonstration, the user name “mydomain.com\jane_admin” and the password “Cyberlab123!”. After the credentials are imputed, click on “OK” on the bottom left corner of the screen. 
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%206.png" width="600" height="400" />
 
 
 
 A confirmation message will pop-up afterwards if the credentials matched. Click “OK”. The computer will then need to be restated. Once it boots up again it will officially be a member of the domain controller. Now an organizational unit named “_CLIENTS” will be created within the domain controller and “Client-1” will be put within this folder. To begin, go to the “Active Directory Users and Computers” application with the Domain Controller. Within the app,  right click the “mydomain.com” section and select “New” then click on “Organizational Unit”. Name this organizational unit “_CLIENTS” then click “OK” on the bottom right hand corner of the screen.
 
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%207.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%208.png" width="600" height="400" />
 
 
 
 “Client 1” can now be dragged into this folder. Within the “mydomain.com” drop down, click on the “Computers” folder and select “client-1”. Drag “client-1” into the “_CLIENTS” folder.
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%209.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/a0043bd7b5ce928660dadb65cdae0c11bffb572c/images/Active%20Directory%20Client%2010.png" width="600" height="400" />
 
 
 This concludes all the steps. Now Active Directory has been deployed and configured and a computer has been added to the domain. 
