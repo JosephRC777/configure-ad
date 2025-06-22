@@ -36,7 +36,7 @@ To begin, Active Directory must be installed on the domain controller. This is n
 
 Click on "Server Manager" then within the server manager click on "Add roles and features".
 
-<img src="https://github.com/JosephRC777/configure-ad/blob/353a618b5b66c1356b15b7fdf6bc43ec6d8ef178/images/Active%20directory%202.png" width="600" height="400" />
+<img src="https://github.com/JosephRC777/configure-ad/blob/353a618b5b66c1356b15b7fdf6bc43ec6d8ef178/images/Active%20directory%202.png" width="600" height="600" />
 
 <img src="https://github.com/JosephRC777/configure-ad/blob/353a618b5b66c1356b15b7fdf6bc43ec6d8ef178/images/Active%20directory%203.png" width="600" height="400" />
 
