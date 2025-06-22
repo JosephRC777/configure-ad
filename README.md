@@ -37,220 +37,62 @@ Within the “Before You Begin” section in the “Add Roles and Features Wizar
 Within the “Server Roles” section, select “Active Directory Domain Services” under the “Roles” section. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%207.png" width="600" height="400" />
 
 
 
 When the “Active Directory Domain Service” role is clicked, a pop-up screen will appear requesting to install services and features. Make sure the checkbox next to “Include management tools (if applicable)” is checked. Afterwards, Click on “Add Features” on the bottom right corner.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%208.png" width="600" height="400" />
 
 
 
 Once “Add Features” is clicked, the previous screen will show back up with a checkmark next to “Active Directory Domain Services”. On this screen, Click on “Next” on the bottom right hand corner. 
 
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%209.png" width="600" height="400" />
 
 
 Within the “Features” section, click on “Next” on the bottom right corner. Within the “AD DS” section, click on “Next” on the bottom right corner.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%2010.png" width="600" height="400" />
 
 
 Within the “Confirmation” section, click on the checkbox next to “Restart the destination server automatically if required”. A pop-up screen will show up. Click on “Yes” on the bottom. Afterwards, click on “Install” on the bottom right hand corner.
 
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%2012.png" width="600" height="400" />
 
 
 
 A bar showing the installation progress will appear within the “Results” section. Once the installation is finished, click on “Close” on the bottom right hand corner. 
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%2013.png" width="600" height="400" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Promote Server machine into a Domain Controller
+<h1>Promote Server machine into a Domain Controller</h1>
 Now that “AD DS” has been installed, the server machine must be promoted to a Domain Controller. Some configurations must be made in order to do this. To begin, click the white flag icon on the top right within the server manager screen. 
 
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%2014.png" width="600" height="400" />
 
 Within this pop-up screen, Click on “Promote this server to a domain controller”
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%2015.png" width="600" height="400" />
+
+
 A “Active Directory Domain Services Configuration Wizard” screen will show up. Within the  “Deployment Configuration” section, click on the “Add a new forest” option. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%2016.png" height="400" />
 
 
 Once clicked, a “Root domain name” section will appear. A domain name must be typed in. The domain name typed in the box must follow Dns naming convention. Examples are (yourcompany.local, yourdomain.internal, yourdomain.com). For Private/ Internal Networks, .local, .internal, and .Lan can be used. For Public networks, .com can be used. For the purposes of this demonstration the root name “mydomain.com” will be used. Type in the domain name in the text box then click on “Next” on the bottom right hand corner. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%2017.png" height="400" />
 
 
 
 
 Within the “Domain Controller Options” section, there is place to type and confirm a password for the “Directory Services Restore Mode”. This password is important as it will be utilized in recovering or troubleshooting Active Directory issues. Type in a unique password in the textbox next to “Password”. For the purposes of this demonstration the password “password1” will be used. Retype the same password in the textbox next to “Confirm password”. Afterwards, Click on “Next” on the bottom right hand corner. 
 
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%20%2018.png" height="400" />
 
 
 
