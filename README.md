@@ -5,7 +5,7 @@
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
-<img src="https://github.com/JosephRC777/osticket-prereqs/blob/18a27efdac272441a4a3df7450fdb289cefbf693/images/IIS%201.png" width="600" height="400" />
+
 
 <h1>Install Active Directory Domain Services on domain controller</h1>
 
