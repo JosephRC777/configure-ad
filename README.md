@@ -95,61 +95,23 @@ Within the “Domain Controller Options” section, there is place to type and c
 <img src="https://github.com/JosephRC777/configure-ad/blob/588631cd5fc4175f15a02fa46442b2d97d624252/images/Active%20directory%20%2018.png" height="400" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Within the “DNS Options” section, make sure the checkbox next to “Create DNS delegation” is unchecked. Afterwards, click on “Next”. 
+
+<img src="https://github.com/JosephRC777/configure-ad/blob/5c338183535a07c26c02fb42d01716b0eb8dae14/images/Active%20directory%2019.png" height="400" />
+
 
 Within the “Additional Options” section, click on “Next” on the bottom right corner. Within the “Paths” section, click on “Next” on the bottom right corner. 
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/5c338183535a07c26c02fb42d01716b0eb8dae14/images/Active%20directory%2021.png" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/5c338183535a07c26c02fb42d01716b0eb8dae14/images/Active%20directory%2022.png" height="400" />
 
 
 Within the “Review Options” section, click on “Next” on the bottom right corner. Within the “Prerequisites Check” section, click on “Install” on the bottom right corner. 
 
+<img src="https://github.com/JosephRC777/configure-ad/blob/5c338183535a07c26c02fb42d01716b0eb8dae14/images/Active%20directory%2023.png" height="400" />
+
+<img src="https://github.com/JosephRC777/configure-ad/blob/5c338183535a07c26c02fb42d01716b0eb8dae14/images/Active%20directory%2024.png" height="400" />
 
 
 
